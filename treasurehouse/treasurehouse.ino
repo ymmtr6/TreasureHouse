@@ -130,6 +130,7 @@ void Battle(){
 }
 
 void Battle_after(){
+  // Battle後の動作
   Serial.println("[debug] start battle after select");
 
   // 絆レベル
@@ -162,6 +163,7 @@ void Battle_after(){
 }
 
 int tap(int pinNum){
+  // tap動作
   digitalWrite(pinNum, HIGH);
   delay(tap_delay);
   digitalWrite(pinNum, LOW);
